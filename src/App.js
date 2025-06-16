@@ -23,12 +23,28 @@ const App = () => {
           />
           <div className="Movie-episode">Episodes: {anime.episodes} Ep</div>
           <div className="Movie-rate">Anime Score: {anime.score}</div>
+          <div className="Movie-trailers">
+            {anime.trailer?.embed_url ? (
+              <a
+                href={anime.trailer.embed_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 underline"
+              >
+                Trailers Video
+              </a>
+            ) : (
+              <span className="text-gray-500 italic">
+                Trailers Video: Empty
+              </span>
+            )}
+          </div>
         </div>
       );
     });
   };
 
-  // console.log({ animeList: animeList });
+  console.log({ animeList: animeList });
 
   let debounceTimeout;
 

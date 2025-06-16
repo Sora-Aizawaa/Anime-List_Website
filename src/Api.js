@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export const getMovieList = async () => {
-  const movie = await axios.get("https://api.jikan.moe/v4/anime");
-  //   console.log({ movieList: movie });
+  const movie = await axios.get("https://api.jikan.moe/v4/top/anime");
+  // console.log({ movieList: movie });
   return movie.data.data;
 };
 

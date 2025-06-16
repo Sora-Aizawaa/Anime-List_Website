@@ -63,3 +63,9 @@
   color: rgb(62, 255, 62);
   font-weight: bold;
 }
+
+.Movie-trailers {
+  color: rgb(0, 0, 0);
+
+  font-weight: bold;
+}
